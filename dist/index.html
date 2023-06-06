@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Tailwind CSS</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <!-- nav bar -->
+   <nav class="relative container mx-auto p-6">
+      <!--flex container-->
+      <div class="flex items-center justify-between">
+         <!--logo-->
+         <div>
+            <a href="#"><img src="/assets/logo.png" class="max-h-11">
+            </a>
+         </div>
+         <!--menu-->
+         <div class="space-x-12 font-semibold flex md:flex ">
+            <a href="#" class="hover:text-red-900 hover:duration-150 active:text-sm">Home</a>
+            <a href="#" class="hover:text-red-900 hover:duration-150 active:text-sm">Racing</a>
+            <div id="dropdown">
+               <a href="#" class="hover:text-red-900 hover:duration-150 active:text-sm" id="dropdown" data-dropdown-toggle="dropdownDelay" data-dropdown-delay="500" data-dropdown-trigger="hover" class="text-white type="button">Collections</a>
+                  <div id="dropdown" class="">
+                     <ul>
+                        <li>Sample 1</li>
+                        <li>Sample 2</li>
+                        <li>Sample 3</li>
+                        <li>Sample 4</li>
+                     </ul>
+                  </div>
+            </div>
+            <a href="#" class="hover:text-red-900 hover:duration-150 active:text-sm">News</a>
+            <a href="#" class="hover:text-red-900 hover:duration-150 active:text-sm">Contact</a>
+         </div>
+      </div>
+   </nav>
+   <!--content.container-->
+   <section>
+      <!--contents-->
+      <div class="grid max-w-5xl mx-auto grid-cols-2 gap-3 bg-gray-400">
+         <img src="/assets/ferr1.jpg" alt="" class="col-span-1 w-full h-full object-cover">
+         <div class="flex flex-col gap-3">
+            <img src="/assets/ferr.jpg" alt="" class="w-full h-full object-cover">
+               <div class="grid grid-cols-2 gap-3">
+                  <img src="/assets/ferr2.jpg" alt="" class="w-full h-full object-cover">
+                  <img src="/assets/ferr3.jpg" alt="" class="w-full h-full object-cover">
+               </div>
+         </div>
+      </div>
+   </section>
+</body>
+</html>
